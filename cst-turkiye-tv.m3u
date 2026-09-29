@@ -1,7 +1,4 @@
 #EXTM3U
-# CST DİJİTAL — TÜRKİYE FULL AÇIK TV
-# Kamuya açık / ücretsiz internet yayınları
-# Halk TV dahil edilmemiştir.
 
 #EXTINF:-1 tvg-id="TRT1.tr@SD" tvg-name="TRT 1" tvg-country="TR" group-title="🇹🇷 Ulusal",TRT 1
 https://tv-trt1.medya.trt.com.tr/master.m3u8
