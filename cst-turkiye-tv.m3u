@@ -1,174 +1,38 @@
 #EXTM3U
-# TÜRKİYE TV GÜNCEL LİSTE
+# CST Türkiye TV
 
-# ==================== 🇹🇷 ULUSAL ====================
-#EXTINF:-1 tvg-id="TRT1.tr@SD" tvg-name="TRT 1" tvg-country="TR" group-title="🇹🇷 Ulusal",TRT 1
+#EXTINF:-1 group-title="Ulusal",TRT 1
+#EXTGRP:Ulusal
 https://tv-trt1.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 tvg-id="TRT2.tr@SD" tvg-name="TRT 2" tvg-country="TR" group-title="🇹🇷 Ulusal",TRT 2
+#EXTINF:-1 group-title="Ulusal",TRT 2
+#EXTGRP:Ulusal
 https://tv-trt2.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 tvg-id="ATV.tr@SD" tvg-name="ATV" tvg-country="TR" group-title="🇹🇷 Ulusal",ATV
+#EXTINF:-1 group-title="Ulusal",ATV
+#EXTGRP:Ulusal
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
 
-#EXTINF:-1 tvg-id="KanalD.tr@SD" tvg-name="Kanal D" tvg-country="TR" group-title="🇹🇷 Ulusal",Kanal D
-https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web
+#EXTINF:-1 group-title="Ulusal",Kanal D
+#EXTGRP:Ulusal
+https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
 
-#EXTINF:-1 tvg-id="ShowTV.tr@SD" tvg-name="Show TV" tvg-country="TR" group-title="🇹🇷 Ulusal",Show TV
-https://ciner-live.daioncdn.net/showtv/showtv.m3u8
+#EXTINF:-1 group-title="Haber",CNN Türk
+#EXTGRP:Haber
+https://mn-nl.mncdn.com/blutv_cnnturk/smil:cnnturk_sd.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="StarTV.tr@SD" tvg-name="Star TV" tvg-country="TR" group-title="🇹🇷 Ulusal",Star TV
-https://dogus.daioncdn.net/startv/startv_720p.m3u8?app=web
-
-#EXTINF:-1 tvg-id="NOWTV.tr@SD" tvg-name="NOW TV" tvg-country="TR" group-title="🇹🇷 Ulusal",NOW TV
-https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
-
-#EXTINF:-1 tvg-id="TV8.tr@SD" tvg-name="TV8" tvg-country="TR" group-title="🇹🇷 Ulusal",TV8
-https://tv8-live.daioncdn.net/tv8/tv8.m3u8
-
-#EXTINF:-1 tvg-id="TV85.tr@SD" tvg-name="TV8.5" tvg-country="TR" group-title="🇹🇷 Ulusal",TV8.5
-https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_1080p.m3u8?app=tv8bucuk_web
-
-#EXTINF:-1 tvg-id="Kanal7.tr@SD" tvg-name="Kanal 7" tvg-country="TR" group-title="🇹🇷 Ulusal",Kanal 7
-https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
-
-#EXTINF:-1 tvg-id="Teve2.tr@SD" tvg-name="teve2" tvg-country="TR" group-title="🇹🇷 Ulusal",teve2
-https://demiroren-live.daioncdn.net/teve2/teve2.m3u8
-
-#EXTINF:-1 tvg-id="BeyazTV.tr@SD" tvg-name="Beyaz TV" tvg-country="TR" group-title="🇹🇷 Ulusal",Beyaz TV
-https://beyaztv-live.daioncdn.net/beyaztv/beyaztv.m3u8
-
-#EXTINF:-1 tvg-id="360.tr@SD" tvg-name="360 TV" tvg-country="TR" group-title="🇹🇷 Ulusal",360 TV
-https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
-
-#EXTINF:-1 tvg-id="A2TV.tr@SD" tvg-name="A2" tvg-country="TR" group-title="🇹🇷 Ulusal",A2
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8
-
-#EXTINF:-1 tvg-id="CNBCe.tr@SD" tvg-name="CNBC-e" tvg-country="TR" group-title="🇹🇷 Ulusal",CNBC-e
-https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
-
-
-# ==================== 📰 HABER ====================
-#EXTINF:-1 tvg-id="TRTHaber.tr@SD" tvg-name="TRT Haber" tvg-country="TR" group-title="📰 Haber",TRT Haber
-https://tv-trthaber.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="CNNTurk.tr@SD" tvg-name="CNN Türk" tvg-country="TR" group-title="📰 Haber",CNN Türk
-https://live.duhnet.tv/S2/HLS_LIVE/cnnturknp/playlist.m3u8
-
-#EXTINF:-1 tvg-id="NTV.tr@SD" tvg-name="NTV" tvg-country="TR" group-title="📰 Haber",NTV
-https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web
-
-#EXTINF:-1 tvg-id="HaberturkTV.tr@SD" tvg-name="Habertürk" tvg-country="TR" group-title="📰 Haber",Habertürk
-https://ciner-live.daioncdn.net/haberturk/haberturk.m3u8
-
-#EXTINF:-1 tvg-id="AHaber.tr@SD" tvg-name="A Haber" tvg-country="TR" group-title="📰 Haber",A Haber
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8
-
-#EXTINF:-1 tvg-id="SozcuTV.tr@SD" tvg-name="Sözcü TV" tvg-country="TR" group-title="📰 Haber",Sözcü TV
-https://szc.daioncdn.net/szc/szc_1080p.m3u8
-
-#EXTINF:-1 tvg-id="HalkTV.tr@SD" tvg-name="Halk TV" tvg-country="TR" group-title="📰 Haber",Halk TV
-https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8
-
-#EXTINF:-1 tvg-id="KRT.tr@SD" tvg-name="KRT TV" tvg-country="TR" group-title="📰 Haber",KRT TV
-https://krt-live.daioncdn.net/krt/krt_1080p.m3u8
-
-#EXTINF:-1 tvg-id="Tele1.tr@SD" tvg-name="Tele 1" tvg-country="TR" group-title="📰 Haber",Tele 1
-https://tele1-live.ercdn.net/tele1/tele1.m3u8
-
-#EXTINF:-1 tvg-id="HaberGlobal.tr@SD" tvg-name="Haber Global" tvg-country="TR" group-title="📰 Haber",Haber Global
-https://ensonhaber-live.ercdn.net/haberglobal/haberglobal.m3u8
-
-#EXTINF:-1 tvg-id="TV100.tr@SD" tvg-name="TV100" tvg-country="TR" group-title="📰 Haber",TV100
+#EXTINF:-1 group-title="Haber",TV100
+#EXTGRP:Haber
 https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
 
-#EXTINF:-1 tvg-id="TGRTHaber.tr@SD" tvg-name="TGRT Haber" tvg-country="TR" group-title="📰 Haber",TGRT Haber
-https://canli.tgrthaber.com/tgrt.m3u8
-
-#EXTINF:-1 tvg-id="24TV.tr@SD" tvg-name="24 TV" tvg-country="TR" group-title="📰 Haber",24 TV
-https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
-
-#EXTINF:-1 tvg-id="UlkeTV.tr@SD" tvg-name="Ülke TV" tvg-country="TR" group-title="📰 Haber",Ülke TV
-https://kanal7-live.daioncdn.net/ulketv/ulketv.m3u8
-
-#EXTINF:-1 tvg-id="EkolTV.tr@SD" tvg-name="Ekol TV" tvg-country="TR" group-title="📰 Haber",Ekol TV
-https://ekoltv-live.ercdn.net/ekoltv/ekoltv.m3u8
-
-#EXTINF:-1 tvg-id="BloombergHT.tr@SD" tvg-name="Bloomberg HT" tvg-country="TR" group-title="💰 Finans",Bloomberg HT
-https://ciner-live.daioncdn.net/bloomberght/bloomberght.m3u8
-
-#EXTINF:-1 tvg-id="APara.tr@SD" tvg-name="A Para" tvg-country="TR" group-title="💰 Finans",A Para
-https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8
-
-
-# ==================== ⚽ SPOR ====================
-#EXTINF:-1 tvg-id="TRTSpor.tr@SD" tvg-name="TRT Spor" tvg-country="TR" group-title="⚽ Spor",TRT Spor
+#EXTINF:-1 group-title="Spor",TRT Spor
+#EXTGRP:Spor
 https://tv-trtspor1.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 tvg-id="TRTSporYildiz.tr@SD" tvg-name="TRT Spor Yıldız" tvg-country="TR" group-title="⚽ Spor",TRT Spor Yıldız
-https://tv-trtspor2.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="ASpor.tr@SD" tvg-name="A Spor" tvg-country="TR" group-title="⚽ Spor",A Spor
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
-
-#EXTINF:-1 tvg-id="HTSporTV.tr@SD" tvg-name="HT Spor" tvg-country="TR" group-title="⚽ Spor",HT Spor
-https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
-
-#EXTINF:-1 tvg-id="FBTV.tr@SD" tvg-name="FB TV" tvg-country="TR" group-title="⚽ Spor",FB TV
-http://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="GSTV.tr@SD" tvg-name="GS TV" tvg-country="TR" group-title="⚽ Spor",GS TV
-https://owifavo5.rocketcdn.com/gstv/gstv.smil/master.m3u8
-
-#EXTINF:-1 tvg-id="SportsTV.tr@SD" tvg-name="Sports TV" tvg-country="TR" group-title="⚽ Spor",Sports TV
-https://live.sportstv.com.tr/hls/low/sportstv_fhd/index.m3u8
-
-
-# ==================== 🎬 BELGESEL & YAŞAM ====================
-#EXTINF:-1 tvg-id="TRTBelgesel.tr@SD" tvg-name="TRT Belgesel" tvg-country="TR" group-title="🎬 Belgesel",TRT Belgesel
-https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="DMAX.tr@SD" tvg-name="DMAX" tvg-country="TR" group-title="🎬 Belgesel",DMAX
-https://dogus-live.daioncdn.net/dmax/dmax.m3u8
-
-#EXTINF:-1 tvg-id="TLC.tr@SD" tvg-name="TLC" tvg-country="TR" group-title="🎬 Belgesel",TLC
-https://dogus-live.daioncdn.net/tlc/tlc.m3u8
-
-#EXTINF:-1 tvg-id="DiyanetTV.tr@SD" tvg-name="Diyanet TV" tvg-country="TR" group-title="🕌 Kültür & Yaşam",Diyanet TV
-https://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95a47e07.smil/playlist.m3u8
-
-
-# ==================== 🎵 MÜZİK ====================
-#EXTINF:-1 tvg-id="TRTMuzik.tr@SD" tvg-name="TRT Müzik" tvg-country="TR" group-title="🎵 Müzik",TRT Müzik
+#EXTINF:-1 group-title="Müzik",TRT Müzik
+#EXTGRP:Müzik
 https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 tvg-id="KralPopTV.tr@SD" tvg-name="Kral Pop TV" tvg-country="TR" group-title="🎵 Müzik",Kral Pop TV
-https://dogus-live.daioncdn.net/kralpoptv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="PowerTurkTV.tr@SD" tvg-name="PowerTürk TV" tvg-country="TR" group-title="🎵 Müzik",PowerTürk TV
-https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Number1TV.tr@SD" tvg-name="Number 1 TV" tvg-country="TR" group-title="🎵 Müzik",Number 1 TV
-https://mn-nl.mncdn.com/blutv_nr12/live.m3u8
-
-
-# ==================== 👶 ÇOCUK ====================
-#EXTINF:-1 tvg-id="TRTCocuk.tr@SD" tvg-name="TRT Çocuk" tvg-country="TR" group-title="👶 Çocuk",TRT Çocuk
-https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="MinikaCocuk.tr@SD" tvg-name="Minika Çocuk" tvg-country="TR" group-title="👶 Çocuk",Minika Çocuk
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8
-
-#EXTINF:-1 tvg-id="MinikaGo.tr@SD" tvg-name="Minika GO" tvg-country="TR" group-title="👶 Çocuk",Minika GO
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
-
-
-# ==================== 📺 YEREL & KAMU ====================
-#EXTINF:-1 tvg-id="TBMMTV.tr@SD" tvg-name="TBMM TV" tvg-country="TR" group-title="📺 Kamu",TBMM TV
-https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
-
-#EXTINF:-1 tvg-id="KeciorenTV.tr@SD" tvg-name="Keçiören TV" tvg-country="TR" group-title="📍 Ankara",Keçiören TV
+#EXTINF:-1 group-title="Ankara",Keçiören TV Ankara
+#EXTGRP:Ankara
 https://angr.radyotvonline.net/webtv/smil:kecioren.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="BaskentTV.tr@SD" tvg-name="Başkent TV" tvg-country="TR" group-title="📍 Ankara",Başkent TV
-https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2aa8acf44_1/playlist.m3u8
