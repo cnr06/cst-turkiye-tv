@@ -1,4 +1,5 @@
 #EXTM3U
+# CST Türkiye TV
 #EXTINF:-1 group-title="Ulusal",TRT 1
 https://tv-trt1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Ulusal",TRT 2
@@ -75,10 +76,6 @@ http://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
 https://owifavo5.rocketcdn.com/gstv/gstv.smil/master.m3u8
 #EXTINF:-1 group-title="Spor",TJK TV
 https://tjktv-live.tjk.org/tjktv.m3u8
-#EXTINF:-1 group-title="Finans",Ekotürk
-https://cdn.ekoturk.net/hls/master.m3u8
-#EXTINF:-1 group-title="Finans",Finans Türk TV
-https://yayin30.haber100.com/live/finansturk/playlist.m3u8
 #EXTINF:-1 group-title="Belgesel ve Yaşam",TRT Belgesel
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Belgesel ve Yaşam",Fortuna TV
@@ -103,6 +100,10 @@ https://dost.stream.emsal.im/tv/live.m3u8
 https://live.artidijitalmedya.com/artidijital_diyartv/diyartv/playlist.m3u8
 #EXTINF:-1 group-title="Kültür ve Yaşam",Luys TV
 https://b01c02nl.mediatriple.net/videoonlylive/mtpayqrfkgirxelive/broadcast_5e91c5ac96898.smil/playlist.m3u8
+#EXTINF:-1 group-title="Finans",Ekotürk
+https://cdn.ekoturk.net/hls/master.m3u8
+#EXTINF:-1 group-title="Finans",Finans Türk TV
+https://yayin30.haber100.com/live/finansturk/playlist.m3u8
 #EXTINF:-1 group-title="Müzik",TRT Müzik
 https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Müzik",Kral Pop TV
