@@ -10,7 +10,7 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8
 #EXTINF:-1 group-title="Ulusal",Kanal D
 https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
 #EXTINF:-1 group-title="Ulusal",Show TV
-https://ciner-live.daioncdn.net/showtv/showtv.m3u8
+https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
 #EXTINF:-1 group-title="Ulusal",Star TV
 https://dogus.daioncdn.net/startv/startv_720p.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3&sid=8l4w3lst4co5
 #EXTINF:-1 group-title="Ulusal",NOW TV
@@ -27,7 +27,6 @@ https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
 https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
 #EXTINF:-1 group-title="Ulusal",TV4
 https://turkmedya-live.ercdn.net/tv4/tv4.m3u8
-
 #EXTINF:-1 group-title="Haber",TRT Haber
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Haber",CNN Türk
@@ -64,7 +63,6 @@ https://akittv-live.ercdn.net/akittv/akittv_720p.m3u8
 https://mn-nl.mncdn.com/blutv_ulusalkanal/blutv_ulusalkanal.smil/playlist.m3u8
 #EXTINF:-1 group-title="Haber",TürkHaber
 https://edge1.socialsmart.tv/turkhaber/bant1/playlist.m3u8
-
 #EXTINF:-1 group-title="Spor",TRT Spor
 https://tv-trtspor1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Spor",A Spor
@@ -77,12 +75,10 @@ http://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
 https://owifavo5.rocketcdn.com/gstv/gstv.smil/master.m3u8
 #EXTINF:-1 group-title="Spor",TJK TV
 https://tjktv-live.tjk.org/tjktv.m3u8
-
 #EXTINF:-1 group-title="Finans",Ekotürk
 https://cdn.ekoturk.net/hls/master.m3u8
 #EXTINF:-1 group-title="Finans",Finans Türk TV
 https://yayin30.haber100.com/live/finansturk/playlist.m3u8
-
 #EXTINF:-1 group-title="Belgesel ve Yaşam",TRT Belgesel
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Belgesel ve Yaşam",Fortuna TV
@@ -91,7 +87,6 @@ https://edge.taksimbilisim.com/ftvturk/bant1/playlist.m3u8
 https://edge1.socialsmart.tv/muglaturk/bant1/playlist.m3u8
 #EXTINF:-1 group-title="Belgesel ve Yaşam",Sat 7 Türk
 https://svs.itworkscdn.net/sat7turklive/sat7turk.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="Kültür ve Yaşam",Diyanet TV
 https://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95a47e07.smil/playlist.m3u8
 #EXTINF:-1 group-title="Kültür ve Yaşam",Vav TV
@@ -108,7 +103,6 @@ https://dost.stream.emsal.im/tv/live.m3u8
 https://live.artidijitalmedya.com/artidijital_diyartv/diyartv/playlist.m3u8
 #EXTINF:-1 group-title="Kültür ve Yaşam",Luys TV
 https://b01c02nl.mediatriple.net/videoonlylive/mtpayqrfkgirxelive/broadcast_5e91c5ac96898.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="Müzik",TRT Müzik
 https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Müzik",Kral Pop TV
@@ -137,7 +131,6 @@ https://livetv.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8
 https://livetv.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
 #EXTINF:-1 group-title="Müzik",PowerTürk TV
 https://powerturk.blutv.com/blutv_powerturk/powerturk_sd.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="Çocuk",TRT Çocuk
 https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Çocuk",TRT Diyanet Çocuk
@@ -146,7 +139,6 @@ https://tv-trtdiyanetcocuk.medya.trt.com.tr/master.m3u8
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8
 #EXTINF:-1 group-title="Çocuk",Minika GO
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
-
 #EXTINF:-1 group-title="TRT ve Uluslararası",TRT Türk
 https://tv-trtturk.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="TRT ve Uluslararası",TRT Avaz
@@ -155,10 +147,8 @@ https://tv-trtavaz.medya.trt.com.tr/master.m3u8
 https://tv-trtkurdi.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="TRT ve Uluslararası",Kanal Avrupa
 https://api-tv27.yayin.com.tr/kanalavrupa/index.m3u8
-
 #EXTINF:-1 group-title="Kamu ve Meclis",TBMM TV
 https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
-
 #EXTINF:-1 group-title="Yerel ve Bölgesel",4U TV
 https://hls.4utv.live/hls/stream.m3u8
 #EXTINF:-1 group-title="Yerel ve Bölgesel",Aksu TV
@@ -243,6 +233,5 @@ https://cdn1-ordubeltv.yayin.com.tr/ordubeltv/ordubeltv/playlist.m3u8
 https://cdn4.yayin.com.tr/rehbertv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Yerel ve Bölgesel",Rize Türk TV
 https://yayin.rizeturk.com:3777/hybrid/play.m3u8
-
 #EXTINF:-1 group-title="Ankara",Keçiören TV
 https://angr.radyotvonline.net/webtv/smil:kecioren.smil/playlist.m3u8
