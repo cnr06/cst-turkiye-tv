@@ -5,21 +5,21 @@
 #EXTGRP:Ulusal
 https://tv-trt1.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 group-title="Ulusal",TRT 2
-#EXTGRP:Ulusal
-https://tv-trt2.medya.trt.com.tr/master.m3u8
-
 #EXTINF:-1 group-title="Ulusal",ATV
 #EXTGRP:Ulusal
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_480p.m3u8
 
 #EXTINF:-1 group-title="Ulusal",Kanal D
 #EXTGRP:Ulusal
 https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
 
+#EXTINF:-1 group-title="Ulusal",Show TV
+#EXTGRP:Ulusal
+https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
+
 #EXTINF:-1 group-title="Haber",CNN Türk
 #EXTGRP:Haber
-https://mn-nl.mncdn.com/blutv_cnnturk/smil:cnnturk_sd.smil/playlist.m3u8
+https://live.duhnet.tv/S2/HLS_LIVE/cnnturknp/playlist.m3u8
 
 #EXTINF:-1 group-title="Haber",TV100
 #EXTGRP:Haber
@@ -29,10 +29,18 @@ https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
 #EXTGRP:Spor
 https://tv-trtspor1.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 group-title="Müzik",TRT Müzik
-#EXTGRP:Müzik
-https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="Çocuk",TRT Çocuk
+#EXTGRP:Çocuk
+https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 group-title="Ankara",Keçiören TV Ankara
+#EXTINF:-1 group-title="TRT ve Uluslararası",TRT Türk
+#EXTGRP:TRT ve Uluslararası
+https://tv-trtturk.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 group-title="Kamu ve Meclis",TBMM TV
+#EXTGRP:Kamu ve Meclis
+https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
+
+#EXTINF:-1 group-title="Ankara",Keçiören TV
 #EXTGRP:Ankara
 https://angr.radyotvonline.net/webtv/smil:kecioren.smil/playlist.m3u8
