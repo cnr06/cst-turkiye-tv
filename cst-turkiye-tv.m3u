@@ -1,0 +1,170 @@
+from pathlib import Path
+
+channels = [
+# Ulusal
+("TRT 1","TRT1.tr@SD","🇹🇷 Ulusal","https://tv-trt1.medya.trt.com.tr/master.m3u8"),
+("TRT 2","TRT2.tr@SD","🇹🇷 Ulusal","https://tv-trt2.medya.trt.com.tr/master.m3u8"),
+("TRT 3","TRT3.tr@SD","🇹🇷 Ulusal","https://tv-trt3.live.trt.com.tr/master.m3u8"),
+("ATV","ATV.tr@SD","🇹🇷 Ulusal","https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8"),
+("A2","A2TV.tr@SD","🇹🇷 Ulusal","https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8"),
+("Kanal D","KanalD.tr@SD","🇹🇷 Ulusal","https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3"),
+("Show TV","ShowTV.tr@SD","🇹🇷 Ulusal","https://ciner-live.daioncdn.net/showtv/showtv.m3u8"),
+("Star TV","StarTV.tr@SD","🇹🇷 Ulusal","https://dogus.daioncdn.net/startv/startv_720p.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3"),
+("NOW TV","NOWTV.tr@SD","🇹🇷 Ulusal","https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8"),
+("TV8","TV8.tr@SD","🇹🇷 Ulusal","https://tv8-live.daioncdn.net/tv8/tv8.m3u8"),
+("TV8.5","TV85.tr@SD","🇹🇷 Ulusal","https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_1080p.m3u8?app=tv8bucuk_web&ce=3"),
+("Kanal 7","Kanal7.tr@SD","🇹🇷 Ulusal","https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8"),
+("teve2","Teve2.tr@SD","🇹🇷 Ulusal","https://demiroren-live.daioncdn.net/teve2/teve2.m3u8"),
+("360 TV","360.tr@SD","🇹🇷 Ulusal","https://turkmedya-live.ercdn.net/tv360/tv360.m3u8"),
+("TV4","TV4.tr@SD","🇹🇷 Ulusal","https://turkmedya-live.ercdn.net/tv4/tv4_1080p.m3u8"),
+("Beyaz TV","BeyazTV.tr@SD","🇹🇷 Ulusal","https://beyaztv-live.daioncdn.net/beyaztv/beyaztv.m3u8"),
+("CNBC-e","CNBCe.tr@SD","🇹🇷 Ulusal","https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8"),
+("Euro D","EuroD.tr@SD","🇹🇷 Ulusal","https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8"),
+("ATV Avrupa","ATVAvrupa.tr@SD","🇹🇷 Ulusal","https://tgn.bozztv.com/dvrfl05/gin-atvavrupa/tracks-v1a1/mono.m3u8"),
+
+# Haber / ekonomi
+("TRT Haber","TRTHaber.tr@SD","📰 Haber","https://tv-trthaber.medya.trt.com.tr/master.m3u8"),
+("NTV","NTV.tr@SD","📰 Haber","https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web"),
+("A Haber","AHaber.tr@SD","📰 Haber","https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8"),
+("Habertürk","HaberturkTV.tr@SD","📰 Haber","https://tv.ensonhaber.com/haberturk/haberturk.m3u8"),
+("Haber Global","HaberGlobal.tr@SD","📰 Haber","https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8"),
+("TV100","TV100.tr@SD","📰 Haber","https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8"),
+("TGRT Haber","TGRTHaber.tr@SD","📰 Haber","https://canli.tgrthaber.com/tgrt.m3u8"),
+("24 TV","24TV.tr@SD","📰 Haber","https://turkmedya-live.ercdn.net/tv24/tv24_720p.m3u8"),
+("Bengütürk","BenguturkTV.tr@SD","📰 Haber","https://tv.ensonhaber.com/benguturk/benguturk.m3u8"),
+("TVNET","TVNET.tr@SD","📰 Haber","https://tvnet-live.lg.mncdn.com/tvnet/tvnet/playlist.m3u8"),
+("Ülke TV","UlkeTV.tr@SD","📰 Haber","https://ulketv.blutv.com/blutv_ulketv2/live_720p2000000kbps/index.m3u8"),
+("Ekol TV","EkolTV.tr@SD","📰 Haber","https://ekoltv-live.ercdn.net/ekoltv/ekoltv.m3u8"),
+("Sözcü TV","SozcuTV.tr@SD","📰 Haber","https://szctvdvr.blutv.com/blutv_szctv_dvr/live_720p4350000kbps/index.m3u8"),
+("Tele 1","Tele1.tr@SD","📰 Haber","https://tele1-live.ercdn.net/tele1/tele1.m3u8"),
+("Flash Haber TV","FlashHaberTV.tr@SD","📰 Haber","https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/playlist.m3u8"),
+("Ekotürk","Ekoturk.tr@SD","💰 Finans","https://cdn.ekoturk.net/hls/master.m3u8"),
+("Bloomberg HT","BloombergHT.tr@SD","💰 Finans","https://ciner-live.daioncdn.net/bloomberght/bloomberght.m3u8"),
+("A Para","APara.tr@SD","💰 Finans","https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8"),
+("Finans Türk TV","FinansTurkTV.tr@SD","💰 Finans","https://yayin30.haber100.com/live/finansturk/playlist.m3u8"),
+("GZT","GZT.tr@SD","📰 Haber","https://gzttv-live.lg.mncdn.com/gzttv/gzttv/playlist.m3u8"),
+
+# Spor
+("TRT Spor","TRTSpor.tr@SD","⚽ Spor","https://tv-trtspor1.medya.trt.com.tr/master.m3u8"),
+("TRT Spor Yıldız","TRTSporYildiz.tr@SD","⚽ Spor","https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web&platform=trtspor"),
+("TRT Spor 2","TRTSpor2.tr@SD","⚽ Spor","https://tv-trtspor2.medya.trt.com.tr/master.m3u8"),
+("A Spor","ASpor.tr@SD","⚽ Spor","https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8"),
+("HT Spor","HTSporTV.tr@SD","⚽ Spor","https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web"),
+("Sports TV","SportsTV.tr@SD","⚽ Spor","https://live.sportstv.com.tr/hls/low/sportstv_fhd/index.m3u8"),
+("FB TV","FBTV.tr@SD","⚽ Spor","http://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8"),
+("GS TV","GSTV.tr@SD","⚽ Spor","https://owifavo5.rocketcdn.com/gstv/gstv.smil/master.m3u8"),
+("TJK TV","TJKTV.tr@SD","⚽ Spor","https://tjktv-live.tjk.org/tjktv.m3u8"),
+("TJK TV 2","TJKTV2.tr@SD","⚽ Spor","https://tjktv-live.tjk.org/tjktv2/tjktv2.m3u8"),
+
+# Belgesel / yaşam
+("TRT Belgesel","TRTBelgesel.tr@SD","🎬 Belgesel","https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8"),
+("DMAX","DMAX.tr@SD","🎬 Belgesel","https://dogus-live.daioncdn.net/dmax/dmax_720p.m3u8"),
+("TLC","TLC.tr@SD","🎬 Belgesel","https://dogus-live.daioncdn.net/tlc/tlc_720p.m3u8"),
+("TGRT Belgesel","TGRTBelgesel.tr@SD","🎬 Belgesel","https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe462afc6a0e.smil/playlist.m3u8"),
+("Çiftçi TV","CiftciTV.tr@SD","🎬 Belgesel & Yaşam","https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/playlist.m3u8"),
+("Agro TV","AgroTV.tr@SD","🎬 Belgesel & Yaşam","https://edge1.socialsmart.tv/agrotv/bant1/playlist.m3u8"),
+("Diyanet TV","DiyanetTV.tr@SD","🕌 Kültür & Yaşam","https://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95a47e07.smil/playlist.m3u8"),
+("Dost TV","DostTV.tr@SD","🕌 Kültür & Yaşam","https://dost.stream.emsal.im/tv/live.m3u8"),
+("Semerkand TV","SemerkandTV.tr@SD","🕌 Kültür & Yaşam","https://b01c02nl.mediatriple.net/videoonlylive/mtisvwurbfcyslive/broadcast_58d915bd40efc.smil/playlist.m3u8"),
+("Meltem TV","MeltemTV.tr@SD","🕌 Kültür & Yaşam","https://vhxyrsly.rocketcdn.com/meltemtv/playlist.m3u8"),
+("Lalegül TV","LalegulTV.tr@SD","🕌 Kültür & Yaşam","https://lbl.netmedya.net/hls/lalegultv.m3u8"),
+
+# Müzik
+("TRT Müzik","TRTMuzik.tr@SD","🎵 Müzik","https://tv-trtmuzik.medya.trt.com.tr/master.m3u8"),
+("Kral Pop TV","KralPopTV.tr@SD","🎵 Müzik","https://dogus-live.daioncdn.net/kralpoptv/playlist.m3u8"),
+("PowerTürk TV","PowerTurkTV.tr@SD","🎵 Müzik","https://powerturk.blutv.com/blutv_powerturk/powerturk_sd.smil/playlist.m3u8"),
+("Power TV","PowerTV.tr@SD","🎵 Müzik","https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8"),
+("Power Dance","PowerDance.tr@SD","🎵 Müzik","https://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8"),
+("Power Türk Slow","PowerTurkSlow.tr@SD","🎵 Müzik","https://livetv.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8"),
+("Power Türk Taptaze","PowerTurkTaptaze.tr@SD","🎵 Müzik","https://livetv.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8"),
+("Number 1 TV","Number1TV.tr@SD","🎵 Müzik","https://mn-nl.mncdn.com/blutv_nr12/live.m3u8"),
+("Number 1 Dance","Number1Dance.tr@SD","🎵 Müzik","https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2aa8acf44_1/playlist.m3u8"),
+("Number 1 Damar","Number1Damar.tr@SD","🎵 Müzik","https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e198784bdc_1/playlist.m3u8"),
+
+# Çocuk / eğitim
+("TRT Çocuk","TRTCocuk.tr@SD","👶 Çocuk","https://tv-trtcocuk.medya.trt.com.tr/master.m3u8"),
+("TRT Diyanet Çocuk","TRTDiyanetCocuk.tr@SD","👶 Çocuk","https://tv-trtdiyanetcocuk.medya.trt.com.tr/master.m3u8"),
+("TRT EBA İlkokul","TRTEBAIlkokul.tr@SD","🎓 Eğitim","https://tv-e-okul00.medya.trt.com.tr/master.m3u8"),
+("TRT EBA Ortaokul","TRTEBA.tr@SD","🎓 Eğitim","https://tv-e-okul01.medya.trt.com.tr/master.m3u8"),
+("TRT EBA Lise","TRTEBALise.tr@SD","🎓 Eğitim","https://tv-e-okul02.medya.trt.com.tr/master.m3u8"),
+("Minika Çocuk","MinikaCocuk.tr@SD","👶 Çocuk","https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8"),
+("Minika GO","MinikaGo.tr@SD","👶 Çocuk","https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8"),
+
+# TRT / uluslararası
+("TRT Türk","TRTTurk.tr@SD","🌍 TRT & Uluslararası","https://tv-trtturk.medya.trt.com.tr/master.m3u8"),
+("TRT Avaz","TRTAvaz.tr@SD","🌍 TRT & Uluslararası","https://tv-trtavaz.medya.trt.com.tr/master.m3u8"),
+("TRT Kurdî","TRTKurdi.tr@SD","🌍 TRT & Uluslararası","https://tv-trtkurdi.medya.trt.com.tr/master.m3u8"),
+("TRT Arabi","TRTArabi.tr@SD","🌍 TRT & Uluslararası","https://tv-trtarabi.medya.trt.com.tr/master.m3u8"),
+("TRT World","TRTWorld.tr@SD","🌍 TRT & Uluslararası","https://tv-trtworld.medya.trt.com.tr/master.m3u8"),
+
+# Yerel / bölgesel
+("4U TV","4UTV.tr@SD","📺 Yerel & Bölgesel","https://hls.4utv.live/hls/stream.m3u8"),
+("Aksu TV","AksuTV.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_aksutv/aksutv/playlist.m3u8"),
+("Alanya Posta TV","AlanyaPostaTV.tr@SD","📺 Yerel & Bölgesel","https://api-tv3.yayin.com.tr/postatv/postatv/playlist.m3u8"),
+("Altas TV","AltasTV.tr@SD","📺 Yerel & Bölgesel","https://edge1.socialsmart.tv/altastv/bant1/playlist.m3u8"),
+("Anadolu Net TV","AnadoluNetTV.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_anadolunet/anadolunet/playlist.m3u8"),
+("ATV Alanya","ATVAlanya.tr@SD","📺 Yerel & Bölgesel","https://cdn-alanyatv.yayin.com.tr/alanyatv/alanyatv/playlist.m3u8"),
+("Bursa AS TV","ASTV.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_astv/astv/playlist.m3u8"),
+("Bursa TV","BursaTV.tr@SD","📺 Yerel & Bölgesel","https://win1.yayin.com.tr/bursatv/bursatv/playlist.m3u8"),
+("Çay TV","CayTV.tr@SD","📺 Yerel & Bölgesel","https://edge1.socialsmart.tv/caytv/bant1/playlist.m3u8"),
+("Cekmeköy TV","CekmekoyTV.tr@SD","📺 Yerel & Bölgesel","https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/cekmekoybeltv_1080p/playlist.m3u8"),
+("Deniz Postası TV","DenizPostasiTV.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_denizpostasi/denizpostasi/playlist.m3u8"),
+("Diyar TV","DiyarTV.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_diyartv/diyartv/playlist.m3u8"),
+("Edessa TV","EdessaTV.tr@SD","📺 Yerel & Bölgesel","https://canli.edessatv.com/hls/stream.m3u8"),
+("Erzurum Web TV","ErzurumWebTV.tr@SD","📺 Yerel & Bölgesel","https://win29.yayin.com.tr/erzurumwebtv/erzurumwebtv/iptvdelisi.m3u8"),
+("ES TV","ESTV.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_estv/estv/playlist.m3u8"),
+("ETV Kayseri","ETVKayseri.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_etv/etv/playlist.m3u8"),
+("ETV Manisa","ETVManisa.tr@SD","📺 Yerel & Bölgesel","https://edge1.socialsmart.tv/manisaetv/bant1/playlist.m3u8"),
+("Haber61 TV","Haber61TV.tr@SD","📺 Yerel & Bölgesel","https://cdn-haber61tv.yayin.com.tr/haber61tv/smil:haber61tv.smil/index.m3u8"),
+("Içel TV","IcelTV.tr@SD","📺 Yerel & Bölgesel","https://edge1.socialsmart.tv/iceltv/bant1/playlist.m3u8"),
+("Kanal 26","Kanal26.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_kanal26/kanal26/playlist.m3u8"),
+("Kanal 32","Kanal32.tr@SD","📺 Yerel & Bölgesel","https://edge1.socialsmart.tv/kanal32/bant1/playlist.m3u8"),
+("Kanal 33","Kanal33.tr@SD","📺 Yerel & Bölgesel","https://edge1.socialsmart.tv/kanal33/bant1/playlist.m3u8"),
+("Kanal 34","Kanal34.tr@SD","📺 Yerel & Bölgesel","https://vdo.digitalbox.xyz:3266/live/kanal34tvlive.m3u8"),
+("Kanal 58","Kanal58.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_kanal58/kanal58/playlist.m3u8"),
+("Kanal Fırat","KanalFirat.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_kanalfirat/kanalfirat/playlist.m3u8"),
+("Kanal V","KanalV.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_kanalv/kanalv/playlist.m3u8"),
+("Kay TV","KayTV.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_kaytv/kaytv/playlist.m3u8"),
+("Kent Türk TV","KentTurk.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_38kenttv/38kenttv/playlist.m3u8"),
+("Kocaeli TV","KocaeliTV.tr@SD","📺 Yerel & Bölgesel","https://edge.taksimbilisim.com/kocaelitv/bant1/playlist.m3u8"),
+("Konya Olay TV","KonyaOlayTV.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_konyaolaytv/konyaolaytv/playlist.m3u8"),
+("Line TV","LineTV.tr@SD","📺 Yerel & Bölgesel","https://edge1.socialsmart.tv/linetv/bant1/playlist.m3u8"),
+("Mavi Karadeniz","MaviKaradenizTV.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_mavikaradeniz/mavikaradeniz/playlist.m3u8"),
+("Mercan TV","MercanTV.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_mercantv/mercantv/playlist.m3u8"),
+("Olay Türk TV Kayseri","OlayTurkTV.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_olayturk/olayturk/playlist.m3u8"),
+("On4 TV","On4TV.tr@SD","📺 Yerel & Bölgesel","https://edge1.socialsmart.tv/on4/bant1/playlist.m3u8"),
+("Sercem TV","SercemTV.tr@HD","📺 Yerel & Bölgesel","https://canli.sercemtv.com.tr/hls/0/stream.m3u8"),
+("Sun RTV","SunRTV.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_sunrtv/sunrtv/playlist.m3u8"),
+("TBMM TV","TBMMTV.tr@SD","📺 Kamu & Meclis","https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8"),
+("Tivi 6","Tivi6.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8"),
+("TV 1","TV1.tr@SD","📺 Yerel & Bölgesel","https://edge1.socialsmart.tv/tv1/bant1/playlist.m3u8"),
+("TV 41","TV41.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_tv41/tv41/playlist.m3u8"),
+("TV 42","TV42.tr@SD","📺 Yerel & Bölgesel","https://canli.tv42.com.tr/memfs/d936e417-c4bd-4d42-89a2-02f289892d1d.m3u8"),
+("TV 52","TV52.tr@SD","📺 Yerel & Bölgesel","https://edge1.socialsmart.tv/tv52/bant1/playlist.m3u8"),
+("TV 264","TV264.tr@SD","📺 Yerel & Bölgesel","https://b01c02nl.mediatriple.net/videoonlylive/mtdxkkitgbrckilive/broadcast_5ee244263fd6d.smil/playlist.m3u8"),
+("Urfa Natik TV","UrfaNatikTV.tr@SD","📺 Yerel & Bölgesel","https://live.artidijitalmedya.com/artidijital_urfanatiktv/urfanatiktv/playlist.m3u8"),
+("Keçiören TV Ankara","KeciorenTV.tr@SD","📍 Ankara","https://angr.radyotvonline.net/webtv/smil:kecioren.smil/playlist.m3u8"),
+]
+
+# M3U oluştur
+lines = [
+    "#EXTM3U",
+    "# CST DİJİTAL — TÜRKİYE FULL AÇIK TV",
+    "# 100+ kamuya açık / ücretsiz internet yayını",
+    "# Halk TV özellikle dahil edilmemiştir.",
+    "# Ücretli/premium spor kanalları dahil edilmemiştir.",
+    ""
+]
+
+for name, tvgid, group, url in channels:
+    lines.append(
+        f'#EXTINF:-1 tvg-id="{tvgid}" tvg-name="{name}" tvg-country="TR" group-title="{group}",{name}'
+    )
+    lines.append(url)
+    lines.append("")
+
+path = Path("/mnt/data/CST_Turkiye_Full_100Plus.m3u")
+path.write_text("\n".join(lines), encoding="utf-8")
+
+print(f"✅ CST Türkiye Full oluşturuldu: {len(channels)} kanal")
+print(f"📁 {path}")
